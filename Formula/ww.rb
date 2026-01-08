@@ -1,8 +1,8 @@
 class Ww < Formula
   desc "ww command"
   homepage "https://github.com/omihirofumi/ww"
-  url "https://github.com/omihirofumi/ww/archive/refs/tags/v0.6.2.tar.gz"
-  sha256 "1a4d4db654951bcdf5a7e446785f597ad4c950da7672b0da3b29c33f5a3cd502"
+  url "https://github.com/omihirofumi/ww/archive/refs/tags/v0.6.3.tar.gz"
+  sha256 "1f9c9e442553d20f2cfd952d463e0555c47ec7eb8a52a3f0d9d3b62d1e347cfe"
   license "MIT"
 
   depends_on "zig" => :build
