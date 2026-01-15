@@ -1,14 +1,14 @@
 class Ww < Formula
   desc "ww command"
   homepage "https://github.com/omihirofumi/ww"
-  url "https://github.com/omihirofumi/ww/archive/refs/tags/v0.11.0.tar.gz"
-  sha256 "1174fbf72caeac7e834bae37eabee39b8651bc199a7e94c84fdf459148cbaa8b"
+  url "https://github.com/omihirofumi/ww/archive/refs/tags/v0.11.2.tar.gz"
+  sha256 "af4f7437762616cb5fd6e8de366fb219af5a608661f13bea5e190f468d19ffdd"
   license "MIT"
 
   depends_on "zig" => :build
 
   def install
-    system "zig", "build", "-Doptimize=ReleaseSafe", "-Dversion=0.11.0"
+    system "zig", "build", "-Doptimize=ReleaseSafe", "-Dversion=0.11.2"
     bin.install "zig-out/bin/ww"
   end
 
