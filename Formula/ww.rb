@@ -8,7 +8,7 @@ class Ww < Formula
   depends_on "zig" => :build
 
   def install
-    system "zig", "build", "-Doptimize=ReleaseSafe"
+    system "zig", "build", "-Doptimize=ReleaseSafe", "-Dversion=#{version}"
     bin.install "zig-out/bin/ww"
   end
 
