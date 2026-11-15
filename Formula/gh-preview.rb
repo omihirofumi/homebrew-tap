@@ -1,8 +1,8 @@
 class GhPreview < Formula
   desc "Review GitHub pull requests with Jujutsu and Helix"
   homepage "https://github.com/omihirofumi/pr-review"
-  url "https://github.com/omihirofumi/pr-review/archive/refs/tags/v0.4.0.tar.gz"
-  sha256 "173afce26c8ea92c52666263b73ba5d948b5c74bf687b7915dd04864c5f7bb18"
+  url "https://github.com/omihirofumi/pr-review/archive/refs/tags/v0.5.0.tar.gz"
+  sha256 "ae5070002904cbd96655377a31b8de6e0f513d4143a0dbaff6d0afb14deb7d3b"
   license "MIT"
 
   depends_on "rust" => :build
