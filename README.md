@@ -21,9 +21,7 @@ Review GitHub pull requests with Jujutsu workspaces, Helix navigation, and inlin
 brew install omihirofumi/tap/prpr
 ```
 
-Run `prpr` inside a repository, or `prpr 123` to open a specific PR. See the [project README](https://github.com/omihirofumi/pr-review#readme) for the review controls.
-
-`gh-preview` and `pr-review` remain available as command aliases.
+Run `prpr` inside a repository, or `prpr 123` to open a specific PR. See the [project README](https://github.com/omihirofumi/prpr#readme) for the review controls.
 
 ## Documentation
 
