@@ -5,6 +5,8 @@ class Prpr < Formula
   sha256 "fd60c89a4bc6a69ed987b1b810a786647a7d8bd3b04ea00e5ebae5e42c9b9845"
   license "MIT"
 
+  link_overwrite "bin/prpr"
+
   depends_on "rust" => :build
   depends_on "gh"
   depends_on "git"
