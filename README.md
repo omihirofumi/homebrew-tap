@@ -13,15 +13,17 @@ tap "omihirofumi/tap"
 brew "<formula>"
 ```
 
-## gh-preview
+## prpr
 
 Review GitHub pull requests with Jujutsu workspaces, Helix navigation, and inline comments:
 
 ```sh
-brew install omihirofumi/tap/gh-preview
+brew install omihirofumi/tap/prpr
 ```
 
-Run `gh-preview` inside a repository, or `gh-preview 123` to open a specific PR. See the [project README](https://github.com/omihirofumi/pr-review#readme) for the review controls.
+Run `prpr` inside a repository, or `prpr 123` to open a specific PR. See the [project README](https://github.com/omihirofumi/pr-review#readme) for the review controls.
+
+`gh-preview` and `pr-review` remain available as command aliases.
 
 ## Documentation
 

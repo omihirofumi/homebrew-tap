@@ -1,8 +1,8 @@
 class GhPreview < Formula
   desc "Review GitHub pull requests with Jujutsu and Helix"
   homepage "https://github.com/omihirofumi/pr-review"
-  url "https://github.com/omihirofumi/pr-review/archive/refs/tags/v0.3.0.tar.gz"
-  sha256 "f88214fc77e70cc26a8d412702302766defe91bf2aa039d7ba0a5583981a34cb"
+  url "https://github.com/omihirofumi/pr-review/archive/refs/tags/v0.4.0.tar.gz"
+  sha256 "173afce26c8ea92c52666263b73ba5d948b5c74bf687b7915dd04864c5f7bb18"
   license "MIT"
 
   depends_on "rust" => :build
@@ -20,10 +20,12 @@ class GhPreview < Formula
   end
 
   test do
-    assert_match "gh-preview #{version}", shell_output("#{bin}/gh-preview --version")
-    assert_match "PR URL or number", shell_output("#{bin}/gh-preview --help")
-    assert_match "--agent", shell_output("#{bin}/gh-preview --help")
-    assert_match "gh-preview/config.toml", shell_output("#{bin}/gh-preview --config-path")
-    assert_match "gh-preview #{version}", shell_output("#{bin}/pr-review --version")
+    %w[prpr gh-preview pr-review].each do |command|
+      assert_match "prpr #{version}", shell_output("#{bin}/#{command} --version")
+    end
+    assert_match "Usage: prpr", shell_output("#{bin}/prpr --help")
+    assert_match "PR URL or number", shell_output("#{bin}/prpr --help")
+    assert_match "--agent", shell_output("#{bin}/prpr --help")
+    assert_match "gh-preview/config.toml", shell_output("#{bin}/prpr --config-path")
   end
 end
