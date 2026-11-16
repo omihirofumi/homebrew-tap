@@ -4,12 +4,9 @@ class Prpr < Formula
   url "https://github.com/omihirofumi/prpr/archive/refs/tags/v0.9.0.tar.gz"
   sha256 "fe35d2091598f9462f5a03e0da3795f5965fbae474e5c404556b450e5b6ffbff"
   license "MIT"
+  revision 1
 
   depends_on "rust" => :build
-  depends_on "gh"
-  depends_on "git"
-  depends_on "helix"
-  depends_on "jj"
 
   link_overwrite "bin/prpr"
 
