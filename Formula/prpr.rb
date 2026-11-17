@@ -1,8 +1,8 @@
 class Prpr < Formula
   desc "Review GitHub PRs and local Jujutsu changes"
   homepage "https://github.com/omihirofumi/prpr"
-  url "https://github.com/omihirofumi/prpr/archive/refs/tags/v0.14.0.tar.gz"
-  sha256 "96fb9f34a38a79556a63ce2264a5c3b8d4dd1054c1429d33cfb86a91588d4dac"
+  url "https://github.com/omihirofumi/prpr/archive/refs/tags/v0.15.0.tar.gz"
+  sha256 "d7e4197e1048a0fd3f50ae46bb1cb0c19dd043f45d33d94b95f28024e501e771"
   license "MIT"
 
   depends_on "rust" => :build
