@@ -1,8 +1,8 @@
 class Prpr < Formula
   desc "Review GitHub PRs and local Jujutsu changes"
   homepage "https://github.com/omihirofumi/prpr"
-  url "https://github.com/omihirofumi/prpr/archive/refs/tags/v0.22.0.tar.gz"
-  sha256 "4f0ec3ca80f376848595cf5ac9564dd6169bb82d2c44b0dc1a8bd78f8cc7447a"
+  url "https://github.com/omihirofumi/prpr/archive/refs/tags/v0.23.0.tar.gz"
+  sha256 "3e5d93d82d221864899b5b397a27eefcb4bbc339de2c41b24bc7cb0bcd961bab"
   license "MIT"
 
   depends_on "rust" => :build
@@ -36,5 +36,6 @@ class Prpr < Formula
     assert_match "--watch", shell_output("#{bin}/prpr diff --help")
     assert_match "--notes", shell_output("#{bin}/prpr diff --help")
     assert_match "toggle_wrap", shell_output("#{bin}/prpr --config /dev/null --print-keybindings")
+    assert_match "stop_ai", shell_output("#{bin}/prpr --config /dev/null --print-keybindings")
   end
 end
